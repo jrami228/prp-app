@@ -1,0 +1,37 @@
+/* App-specific styles (moved from the inline <style> block). Tailwind utilities live in css/tailwind.css. */
+/* Apply Inter font globally and set dark theme defaults */
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* Custom styling for inputs */
+input::placeholder {
+    color: #9ca3af; /* Gray-400 */
+    opacity: 0.8;
+}
+
+/* Remove arrows/spinners from number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Fade-in animation for dynamic buttons */
+.facid-entry {
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Focus mode: hide every generated result element AND every default button
+   (Search ECM/CARA, PEN-R, Info Portal, ERIC, etc.) — keep only the warning
+   buttons and the triangle toggle itself. */
+.focus-warnings .facid-entry:not(.warning-entry) { display: none !important; }
+.focus-warnings button:not(.warning-entry):not(.warn-toggle) { display: none !important; }
