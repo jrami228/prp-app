@@ -1,0 +1,35 @@
+{
+  "dataDate": "09/05/2026",
+  "generated": "2026-09-05",
+  "notes": "Snapshot carried over from the original single-file app (index.html, commit 76d2705). Eligibility rows reflect the FDEP PRP Eligibility Report run 09/05/2026; DERM-derived files (ut-mapping, folios, facid-tasks) come from DERM exports and are not rebuilt by scripts/refresh_data.py.",
+  "datasets": {
+    "facilities.json": {
+      "source": "FDEP STCM Contaminated Facility List (Miami-Dade, County 13)",
+      "asOf": "09/05/2026"
+    },
+    "eligibility.json": {
+      "source": "FDEP STCM PRP Eligibility Report / All Open Discharges (Miami-Dade)",
+      "asOf": "09/05/2026"
+    },
+    "shared-address.json": {
+      "source": "FDEP DEP Cleanup Sites (County 13, shared ADDRESS1+ZIP5)",
+      "asOf": "09/05/2026"
+    },
+    "ut-mapping.json": {
+      "source": "EXTERNAL: Miami-Dade DERM export (UT work group -> FACID)",
+      "asOf": "09/05/2026"
+    },
+    "folios.json": {
+      "source": "EXTERNAL: Miami-Dade DERM export (DERMPermit_gdb folios by work group)",
+      "asOf": "09/05/2026"
+    },
+    "facid-tasks.json": {
+      "source": "EXTERNAL: Miami-Dade DERM export (Contaminated_Site.csv task names)",
+      "asOf": "09/05/2026"
+    },
+    "icr.json": {
+      "source": "FDEP GIS DWM_WASTE_ICR_BACKG/12 (Florida Institutional Controls Registry), Miami-Dade",
+      "asOf": "10/23/2026"
+    }
+  }
+}
